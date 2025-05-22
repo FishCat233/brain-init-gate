@@ -1,0 +1,18 @@
+baseURL = 'https://example.org/'
+languageCode = 'zh-cn'
+title = 'My New Hugo Site'
+theme = 'Book'
+
+# 主题设置
+# enableGitInfo = true
+# ---
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+
+[module]
+    [[module.mounts]]
+        source = 'content/docs/assets'
+        target = 'static/assets'
