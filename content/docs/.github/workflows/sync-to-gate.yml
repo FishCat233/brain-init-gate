@@ -30,6 +30,11 @@ jobs:
           # --delete 选项会删除目标目录中源目录不存在的文件，保持完全同步
           rsync -av --delete content-repo/ site-repo/content/docs/
           echo "Content synced successfully to site-repo/content/docs/"
+      
+      - name: Copy README.md to _index.md # 复制 README.md 到 _index.md 作为首页
+        run: |
+          cp site-repo/content/docs/README.md site-repo/content/_index.md
+          echo "README.md copied to _index.md"
 
       - name: Commit & Push Changes to Site Repo # 提交并推送更改到站点仓库
         run: |
