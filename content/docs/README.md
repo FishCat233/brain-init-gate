@@ -1,5 +1,5 @@
 ---
-bookHidden = true
+bookHidden: true
 ---
 
 ## 目录
