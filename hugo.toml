@@ -1,10 +1,12 @@
 baseURL = 'https://example.org/'
 languageCode = 'zh-cn'
-title = 'My New Hugo Site'
-theme = 'Book'
+title = 'Brain Init Gate'
+theme = 'hugo-book'
 
 # 主题设置
-# enableGitInfo = true
+enableGitInfo = true
+BookRepo = 'https://github.com/FishCat233/brain-init-gate'
+BookDateFormat = '2006-01-02'
 # ---
 
 [markup]
