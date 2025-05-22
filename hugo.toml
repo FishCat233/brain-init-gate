@@ -13,6 +13,11 @@ BookDateFormat = '2006-01-02'
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
+            [markup.goldmark.extensions.passthrough]
+                enable = true
+                [markup.goldmark.extensions.passthrough.delimiters]
+                block = [['\[', '\]'], ['$$', '$$']]
+                inline = [['\(', '\)'], ['$', '$']]
 
 [module]
     [[module.mounts]]
