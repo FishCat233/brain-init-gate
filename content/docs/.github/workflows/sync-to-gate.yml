@@ -1,0 +1,48 @@
+name: Sync Content to Gate Site Repo
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  sync-content:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Content Repo # 克隆当前内容仓库
+        uses: actions/checkout@v4
+        with:
+          path: "content-repo" # 将内容克隆到 content-repo 目录下
+
+      - name: Clone Site Repo # 克隆站点仓库，用于同步
+        uses: actions/checkout@v4
+        with:
+          repository: FishCat233/brain-init-gate
+          token: ${{ secrets.GATE_REPO_PAT }} # PAT
+          ref: main
+          path: "site-repo" # 将站点仓库克隆到 site-repo 目录下
+
+      - name: Copy Content to Site Repo # 复制文件并同步
+        run: |
+          # 确保目标目录存在，如果不存在则创建
+          mkdir -p site-repo/content/docs/
+
+          # 使用 rsync 同步内容仓库的所有内容到站点仓库的 content/docs/ 目录下
+          # --delete 选项会删除目标目录中源目录不存在的文件，保持完全同步
+          rsync -av --delete content-repo/ site-repo/content/docs/
+          echo "Content synced successfully to site-repo/content/docs/"
+
+      - name: Commit & Push Changes to Site Repo # 提交并推送更改到站点仓库
+        run: |
+          cd site-repo
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          
+          # 检查是否有实际的更改，避免空提交
+          if git diff --cached --exit-code; then
+            echo "No changes to commit in site repo."
+          else
+            git commit -m "Automated: Sync content from content repo"
+            git push
+            echo "Changes pushed to site repo."
+          fi
