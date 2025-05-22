@@ -60,7 +60,7 @@
 
   - [GitHub发行页](https://github.com/msys2/msys2-installer/releases)
   
-- 由于官网不提供latest版本的链接,这里就不放下载直链了。点进去自己下最新版即可。 ~~(其实还有[测试版](https://github.com/msys2/msys2-installer/releases/download/nightly-x86_64/msys2-x86_64-latest.exe)的直链不过不是很推荐用)~~
+- 由于官网不提供latest版本的链接,这里就不放下载直链了。点进去自己下最新版即可。 ~~(其实还有[测试版](https://github.com/msys2/msys2-installer/releases/download/nightly-x86_64/msys2-x86_64-latest.exe)的直链,不过不是很推荐用)~~
 
 - 下载完成双击安装。
 
@@ -70,7 +70,7 @@
 
 #### 安装工具链
 
-- 安装完成点击立即运行。或进入安装目录运行1 ``MSYS2.exe``。
+- 安装完成点击立即运行。或进入安装目录运行 ``MSYS2.exe``。
 - 在打开的终端中输入 ``pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain`` ,安装ucrt。
 
 #### 配置环境变量
@@ -84,11 +84,12 @@
     - 右键左下角开始图标,点击弹出菜单中的 **``系统``**,打开设置的系统信息界面。
 
     - 点击设备规格的相关链接中的 **``高级系统设置``**
+
       ![环境变量配置](assets/env_path_0.png)
 
     - 在弹出的窗口中点击 **``环境变量``**
 
-    - 在 **``用户变量``** 中找到 **``Path``**这一项,双击打开编辑。
+    - 在 **``用户变量``** 中找到 **``Path``** 这一项,双击打开编辑。
 
     - 点击右侧的 **``新建``** ,把上面记下的路径加上``\ucrt64\bin``,输入到这一条变量中。
   
@@ -109,7 +110,9 @@
 - 安装C扩展。
   
   - 和上面一样,直接在扩展的搜索栏中搜索"C"即可。
+  
   ![C/C++](assets/vsc_installation_4.png)
+
   直接安装这个。 **不需要** 安装C Extension Pack、C Theme和CMakeTools。
 
 
