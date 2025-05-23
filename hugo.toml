@@ -11,6 +11,7 @@ BookDateFormat = '2006-01-02'
 
 [params]
 math = true
+BookTheme = 'auto'
 
 [markup]
     [markup.goldmark]
