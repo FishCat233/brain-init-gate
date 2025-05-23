@@ -1,7 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = 'zh-cn'
 title = 'Brain Init Gate'
-theme = 'hugo-book'
+theme = ['hugo-admonitions', 'hugo-book']
 
 # 主题设置
 enableGitInfo = true
