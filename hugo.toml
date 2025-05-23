@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://book.whispery.top/'
 languageCode = 'zh-cn'
 title = 'Brain Init Gate'
 theme = ['hugo-admonitions', 'hugo-book']
