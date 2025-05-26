@@ -61,7 +61,7 @@
 
 ![image-20250517120610821](https://raw.githubusercontent.com/Concorde0/image/refs/heads/main/image-20250517120610821.png)
 
-**好了！现在我们已经把仓库的基本设置完成了，点击Creat repository就可以正式创建一个库了！**
+**好了！现在我们已经把仓库的基本设置完成了，点击Create repository就可以正式创建一个库了！**
 
 ## 4.学习 Git
 
