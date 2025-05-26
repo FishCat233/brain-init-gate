@@ -16,7 +16,6 @@
     {{ $editPath = strings.Replace $editPath "//content/_index.md" "/README.md" -1 }}
   {{ end }}
   <div>
-    editPath: {{ $editPath }}
     <a class="flex align-center" href="{{ $editPath }}" target="_blank" rel="noopener">
       <img src="{{ "svg/edit.svg" | relURL }}" class="book-icon" alt="" />
       <span>{{ i18n "Edit this page" }}</span>
