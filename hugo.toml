@@ -5,13 +5,14 @@ theme = ['hugo-admonitions', 'hugo-book']
 
 # 主题设置
 enableGitInfo = true
-BookRepo = 'https://github.com/FishCat233/brain-init-gate'
-BookDateFormat = '2006-01-02'
 # ---
 
 [params]
 math = true
 BookTheme = 'auto'
+BookRepo = 'https://github.com/Yiyue345/Brain.Init'
+BookEditPath = 'edit/main/'
+BookDateFormat = '2006-01-02'
 
 [markup]
     [markup.goldmark]
