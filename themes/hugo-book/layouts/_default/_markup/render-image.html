@@ -4,7 +4,7 @@
   {{- $src := .Destination | string -}}
   {{- if strings.HasPrefix $src "../" -}}
     {{- $src = (replace $src "../" "../../" 1) -}}
-    {{ $src = replace $src "%20" "-" }}
+    {{ $src = replace $src "%20" "-" | lower }}
   {{- end -}}
   <img src="{{ $src | safeURL }}" alt="{{ .Text }}" {{ with .Title }}title="{{ . }}"{{ end }}/>
 {{- end -}}
