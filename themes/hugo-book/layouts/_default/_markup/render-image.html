@@ -1,4 +1,4 @@
-{{- if .Page.Site.Params.BookPortableLinks -}}
+{{- if and 0 .Page.Site.Params.BookPortableLinks -}}
   {{- template "portable-image" . -}}
 {{- else -}}
   {{- $src := .Destination | string -}}

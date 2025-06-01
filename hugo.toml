@@ -13,6 +13,7 @@ BookTheme = 'auto'
 BookRepo = 'https://github.com/Yiyue345/Brain.Init'
 BookEditPath = 'edit/main/'
 BookDateFormat = '2006-01-02'
+BookPortableLinks = true
 
 [markup]
     [markup.goldmark]

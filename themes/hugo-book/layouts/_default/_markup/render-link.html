@@ -1,7 +1,10 @@
 {{- if .Page.Site.Params.BookPortableLinks -}}
   {{- template "portable-link" . -}}
 {{- else -}}
-  <a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+  {{ $src := .Destination }}
+  {{ $src = strings.TrimSuffix "/_index.md" $src }}
+  {{ $src = strings.TrimSuffix "/_index" $src }}
+  <a href="{{ $src | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
 {{- end -}}
 
 {{- define "portable-link" -}}
