@@ -12,9 +12,11 @@ title: 怎么用电脑——序言
 - 初中及以上的文化水平
 - 学会开关机，并可以熟练使用鼠标的左键
 - 求知的心态
+- [提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)（若无法正常访问可在[此处](https://zhuanlan.zhihu.com/p/664680014)阅读）注：**该指南与[本网站](https://brain.whispery.top/)无关，也不会提供实际支持服务**
 
 除此之外，你还需要一台可以**正常使用**的电脑
 
 如果你具备了以上所有条件，那就可以开始学习下面的东西了 ~~（当然如果你会的话可以直接跳过啦~~
 
+- [如何截图](怎么截图？.md)
 - [Windows 基本常识](一些常用重要概念)
