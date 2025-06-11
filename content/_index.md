@@ -5,7 +5,7 @@ bookHidden: true
 
 你可以前往以下两个链接阅读所有文章：
 
-- [🕊️子的网站](https://brain.whispery.top/)
+- [🕊️子的网站](https://book.whispery.top/)
 - [长期素食的网站](https://book.xn--7br062ccfl55p.top/)
 ## 目录
 - [目录](#目录)
