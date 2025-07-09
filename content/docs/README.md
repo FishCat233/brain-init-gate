@@ -88,4 +88,4 @@ bookHidden: true
 ---
 
 ## 🔚最后
-- 最终解释权归[此仓库](https://github.com/Yiyue345/Brain.Init/tree/main) 所有者及 Collaborator 所有
+- 最终解释权归 [此仓库](https://github.com/Yiyue345/Brain.Init/tree/main) 所有者及 Collaborator 所有
