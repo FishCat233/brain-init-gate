@@ -36,6 +36,10 @@ title: c#
 - 迭代器 yield return
 - 异常处理 Exception try catch finnaly
 
+- 引用参数 in out ref
+  - [C#.NET in、out、ref详解](https://www.cnblogs.com/TangQF/articles/18943640)
+- 泛型逆变协变 in T / out T (逆变协变听个名得了，in T out T怎么用更重要点)
+
 - 模式匹配 is switch
 
 - 其他基础语法的部分语法糖
