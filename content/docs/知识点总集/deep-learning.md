@@ -73,7 +73,6 @@ title: 深度学习(部分)
   - YOLO 单发多框检测器
   - U-net
   - Vision Transformer
-  - Focal Loss (解决图像分类中的类别样本不平衡问题)
 
 - 序列相关
   - 编码器-解码器架构 seq2seq
@@ -114,7 +113,7 @@ title: 深度学习(部分)
   - AdamW 优化器
   - 层归一化
   - 微调
-  - Focal Loss
+  - Focal Loss (解决图像分类中的类别样本不平衡问题)
   - 梯度裁剪 Gradient Clipping
   - 混合精度训练 Mixed Precision Training
   - 预热训练 Warmup
