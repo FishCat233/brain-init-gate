@@ -56,6 +56,7 @@ title: 深度学习(部分)
 - 非必要的工具
   - Pyplot 图绘制 (非必要，单纯工具)
   - Gradio
+  - TensorBoard (没用过，不评价)
 
 - 一些社区生态
   - HuggingFace
