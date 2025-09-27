@@ -4,16 +4,16 @@ title: 深度学习(部分)
 # 深度学习 （部分）
 
 > [!WARNING]
-> 因为深度学习领域很大，所以肯定没办法全部细节写完。
+> 因为深度学习领域很大，所以肯定没办法全部细节写完，学的时候需要自己看情况学细。
 >
-> 所以学到啥写啥。
+> L3 按需求选着看
 
 ## L1 基础级
 
 - 多层感知机 MLP
 - 神经网络基础 神经元(感知机) 层 前向传播 反向传播 链式求导
 - 神经网络的数学原理 微积分 概率论 线性代数 (基本)
-- 神经网络优化器 学习率 SGD momentum Adam
+- 神经网络优化器 学习率 SGD momentum Adam 梯度下降
 - 过拟合 overfitting 欠拟合 underfitting
 - 数据集基本处理 归一化 标准化
 - 训练集 验证集 测试集
@@ -34,7 +34,7 @@ title: 深度学习(部分)
 
 - 正则化 Dropout L1/L2 正则化
 - 卷积神经网络 CNN 感受野 下采样
-- 神经网络框架的使用 Pytorch 自动微分
+- 神经网络框架的使用 Pytorch 自动微分 广播机制
 - 经典 CNN (特别注意其创新点)
   - LeNet
   - AlexNet
@@ -49,6 +49,7 @@ title: 深度学习(部分)
 
 - 训练相关
   - 梯度消失 梯度爆炸
+  - Leaky ReLU
   - 数据增强 Data Augmentation (图像增广)
   - 批量归一化 Batch Normalization
   - K折交叉验证 K-Fold Cross Validation
@@ -72,7 +73,8 @@ title: 深度学习(部分)
   - Faster R-CNN 二阶段检测器
   - YOLO 单发多框检测器
   - U-net
-  - Vision Transformer
+  - Vision Transformer (ViT)
+  - Swin Transformer
 
 - 序列相关
   - 编码器-解码器架构 seq2seq
@@ -86,15 +88,16 @@ title: 深度学习(部分)
   - 扩散模型 Diffusion
 
 - 深度强化学习
-  - 传统强化学习 价值函数 Q函数 SARSA Q-Learning on-policy off-policy
+  - 传统强化学习 价值函数 Q函数 SARSA Q-Learning PPO on-policy off-policy
   - DQN 经验回放
   - DDQN
+  - DPPO
 
 - LLM 开发
-  - 微调 BERT LoRA
+  - 全参微调 PEFT BERT LoRA
   - 分词器
   - 提示词工程 (不算深度学习)
-    - 知识库
+    - RAG 知识库检索
     - 记忆机制
     - 链式提示
     - 思维树
@@ -127,6 +130,13 @@ title: 深度学习(部分)
   - 稀疏化 Sparsity
   - ONNX
   - TensorRT
+
+- 神奇小网站
+  - [活在时光机里面的 Papers with Code](https://web.archive.org/web/20250616051252/https://paperswithcode.com/)
+  - [据说要接手 Paper with Code 的 HuggingFace Papers Trending](https://huggingface.co/papers/trending)
+  - [arXiv](https://arxiv.org/)
+  - [On the Biology of a Large Language Model](https://transformer-circuits.pub/2025/attribution-graphs/biology.html)
+  - [Epoch AI](https://epoch.ai/)
 
 ## L4 前沿级 / 研究级
 
